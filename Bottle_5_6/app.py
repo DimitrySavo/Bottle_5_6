@@ -23,10 +23,8 @@ if __name__ == '__main__':
     PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
     STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static').replace('\\', '/')
     HOST = os.environ.get('SERVER_HOST', 'localhost')
-    try:
-        PORT = int(os.environ.get('SERVER_PORT', '5555'))
-    except ValueError:
-        PORT = 5555
+    if sys.argv[1] == '--port':
+        PORT = int(sys.argv[2])
 
     @bottle.route('/static/<filepath:path>')
     def server_static(filepath):
