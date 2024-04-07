@@ -11,7 +11,9 @@ def my_form():
     mail = request.forms.get('ADRESS')
     name = request.forms.get('USERNAME')
     today = date.today()
-    if(is_valid_email(mail)):
-        return f"Thanks, {name}! The answer will be sent to the mail {mail}. Access date: {today}"
-    else:
+    if(name == "" or mail == ""):
+        return "Please, fill all the fields"
+    elif(not is_valid_email(mail)):
         return "Invalid email adress"
+    else:
+        return f"Thanks, {name}! The answer will be sent to the mail {mail}. Access date: {today}"
