@@ -1,0 +1,17 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830377
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Python Debugger: Current File with Arguments", //Название конфигурации
+            "type": "debugpy", //Тип использованного отладчика
+            "request": "launch", //При отладке будет выполнен запрос на запуск
+            "program": "${file}", //Абсолютный путь до программы
+            "console": "integratedTerminal", //Где запускать объект дебага
+            //"args": ["--port", "443"] //Аргументы коммандной строки, которые передаются в программу
+        }
+    ]
+}
