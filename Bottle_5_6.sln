@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Bottle_5_6", "Bottle_5_6\Bottle_5_6.pyproj", "{F81F8CE1-9947-4A62-BF49-A55BF30DEA84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F81F8CE1-9947-4A62-BF49-A55BF30DEA84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F81F8CE1-9947-4A62-BF49-A55BF30DEA84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F81F8CE1-9947-4A62-BF49-A55BF30DEA84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F81F8CE1-9947-4A62-BF49-A55BF30DEA84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D721632D-5BC0-418C-BEB3-9DD91DE1EFC8}
+	EndGlobalSection
+EndGlobal
