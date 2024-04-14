@@ -11,15 +11,19 @@ def is_valid_email(email):
 def my_form():
     questions = {}
 
+    pdb.set_trace()
+
     question = request.forms.get('QUEST')
     mail = request.forms.get('ADRESS')
     name = request.forms.get('USERNAME')
     today = date.today()
-    pdb.set_trace()
     if(name == "" or mail == "" or questions == ""):
         return "Please, fill all the fields"
     elif(not is_valid_email(mail)):
         return "Invalid email adress"
     else:
-        questions[mail] = question
+        if mail in questions:
+            questions[mail].append(question)
+        else:
+            questions[mail] = [question]
         return f"Thanks, {name}! The answer will be sent to the mail {mail}. Access date: {today}"
